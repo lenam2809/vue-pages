@@ -3,7 +3,7 @@ module.exports = {
         // publicPath: '/vue-pages',
         proxy: {
             '^/api': {
-                target: 'http://localhost:5000',
+                target: 'https://vue-pages.netlify.app/api',
                 changeOrigin: true,
                 logLevel: 'debug',
                 pathRewrite: { '^/api': '/' },
